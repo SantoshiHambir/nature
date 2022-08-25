@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.1)), url(./images/taj3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100% ;
+    height: 15vh;
+    background: rgba(0,0,0,0.1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/* nav .logo1{
+   font-size: 8px;
+   color:#dc143c;
+   text-shadow: 1px 1px 1px white;
+   
+} */
+
+nav .logo{
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+nav .menu {
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li i{
+    color: rgb(149, 153, 153);
+   font-size: 20px;
+   padding-right: 11px;
+  margin: 5px;
+   list-style: none;
+   justify-self: center;
+   justify-content: space-between;
+}
+.menu i:hover{
+    color: aqua;
+}
+nav .menu a{
+    width:25%;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav .menu a:hover{
+    color: crimson;
+}
+nav .menu a:first-child{
+    color:#00b894 ;
+}
+/* .sub-menu{
+    display:flex;
+}
+.menu  ul  li :hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0 );
+    /* margin-top: 15px;
+    margin-left: -15px; */
+/* }
+.menu  ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu  ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+} */ 
+
+main{
+    width: 100%;
+    height: 85vh;
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h3{
+    font-size: 25px;
+    font-weight: 200;
+    /* letter-spacing: 1; */
+    word-spacing: 2;
+}
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-size: 25px;
+    /* color: #eee; */
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+
+}
+section .btnOne{
+    background: #fff;
+    color: #000;
+}
+.btnOne:hover{
+    background: #00b894;
+    color: #fff;
+}
+
+section .btnTwo{
+    background: #00b894;
+    color: #fff;
+}
+.btnTwo:hover{
+    background: #fff;
+    color: #000;
+}
+
+.change_content{
+    font-size: 25px;
+    font-family:sans-serif;
+    text-shadow: 1px 1px 2px rgb(20, 0, 4);
+}
+
+.change_content:after{
+    content: "Darjeeling";
+    animation: changetext 10s  infinite linear;
+    padding-left: 10px;
+    color: #07f81b;
+    font-family: 'Courgette', cursive;
+}
+@keyframes changetext{
+    0% {content: "Darjeeling";}
+    10% {content: "Kashmir";}
+    20% {content: "Ooty";}
+    30% {content: "KulluManali";}
+    40% {content: "Meghalaya";}
+    50% {content: "Matheran";}
+    60% {content: "Delhi";}
+    70% {content: "Mahabaleshwar";}
+    80% {content: "Pune";}
+    90% {content: "Karnataka";}
+    100% {content: "Agra";}
+}
+
+footer{
+    /* margin-top: 150px; */
+    width: 100%;
+    padding: 20px 3%;
+    background: rgb(163, 161, 161);
+    color: #141313;
+    display: flex;
+    /* background-image: url(./images/taj2.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer div{
+    text-align: center;
+
+}
+.col-2{
+    flex-grow: 2;
+}
+footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    /* letter-spacing: 1px; */
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #0e0000;
+    margin-bottom: 10px;
+}
+form input{
+    width: 200px;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    /* margin-top: 10px; */
+    margin-bottom: 13px;
+    outline: none;
+    border: none;
+}
+form button {
+    background: rgb(156, 237, 240);
+    border: 2px solid rgb(83, 1, 1);
+    color: rgb(14, 13, 13);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.social-icons{
+    margin-top: 20px;
+    margin: 10px;
+    cursor: pointer;
+    /* color: blue; */
+
+}
+.social-icons i{
+    font-size: 20px;
+    margin-top: 20px;
+}
